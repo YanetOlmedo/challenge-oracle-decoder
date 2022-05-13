@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body class="body">
+    <header class="encabezado">
+        <img class="logo" src="media/logo.png" alt="Alura">
+        <h1 class="titulo"> Encriptador - Yanet Olmedo </h1>
+    </header>
+    <main class="main">
+        <section class="seccion-uno">
+            <textarea class="text-area" name="" id="" cols="40" rows="6" placeholder="Ingrese el texto aqui"></textarea>
+            <h5 class="texto-sugerencia">*Solo letras minúsculas y sin acentos</h5>
+        <div>
+            <button class="btn-e" type="button" onclick="btnencriptar()">Encriptar</button>
+            <button class="btn-d" type="button" onclick="btndesencriptar()">Desencriptar</button>
+        </div>
+        </section>
+        <section class="seccion-dos">
+            <img id="img" class="muneco" src="media/muneco.png">
+            <h2 id="notxt" class="sin-texto">Ningún mensaje fue encontrado</h2>
+            <textarea class="campo-text-area" name="" id="" cols="18" rows="8">Ingresa el texto que deseas encriptar o desencriptar.</textarea>
+            <div class="botones">
+                
+                <button id = "copy" class="btn-copy" type="button" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
